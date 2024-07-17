@@ -17,17 +17,17 @@
           <button id = "loc-submit" class="btn btn-outline-light" type="button"><svg fill = "black" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></button>
         </div>
     </div>
-   </div>
+  </div>
 
 
-   <div class = "main">
+  <div class = "main">
 
         <div class = "container">
           
           <div id = "card-view" class="card h-100 bg-white p-2 text-dark bg-opacity-50">
             <div id = "card-head">
               <h4 class="card-title">Mathura</h4>
-              <svg xmlns="http://www.w3.org/2000/svg" height="39px" viewBox="0 -960 960 960" width="39px" fill="#F19E39"><path d="M440-760v-160h80v160h-80Zm266 110-55-55 112-115 56 57-113 113Zm54 210v-80h160v80H760ZM440-40v-160h80v160h-80ZM254-652 140-763l57-56 113 113-56 54Zm508 512L651-255l54-54 114 110-57 59ZM40-440v-80h160v80H40Zm157 300-56-57 112-112 29 27 29 28-114 114Zm283-100q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm0-80q66 0 113-47t47-113q0-66-47-113t-113-47q-66 0-113 47t-47 113q0 66 47 113t113 47Zm0-160Z"/></svg>             
+              <div id = "today-icon"><svg xmlns="http://www.w3.org/2000/svg" height="39px" viewBox="0 -960 960 960" width="39px" fill="#F19E39"><path d="M440-760v-160h80v160h-80Zm266 110-55-55 112-115 56 57-113 113Zm54 210v-80h160v80H760ZM440-40v-160h80v160h-80ZM254-652 140-763l57-56 113 113-56 54Zm508 512L651-255l54-54 114 110-57 59ZM40-440v-80h160v80H40Zm157 300-56-57 112-112 29 27 29 28-114 114Zm283-100q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm0-80q66 0 113-47t47-113q0-66-47-113t-113-47q-66 0-113 47t-47 113q0 66 47 113t113 47Zm0-160Z"/></svg></div>           
             </div>  
             <div id = "card-description">
                  <p id = "date">Today, <span id = "date-today">12 Jul</span></p>
@@ -59,11 +59,14 @@
         <div class = "footer-container">
             <div class = "weather-description">
             </div>
-            <div class = "weather-forecast">
-               
+            <div class = "d-flex flex-row overflow-auto border-top border-bottom pb-2 pt-2" id = "weather-forecast">
             </div>
         </div>
    </div>
+
+   <footer id = "footer" style="height: 50px;text-align: center;font-weight: 300;color: white;padding: 10px;">
+        @TheOdinProject
+   </footer>
 
 </body>
 </html>
