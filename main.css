@@ -54,7 +54,7 @@ body,html{
 
 .main{ 
     padding: 20px;
-    background: url("./assets/wallhaven-3zg259_1920x1080.png");
+    background: url(30b2729872bd5b9f2722.png);
     display: flex;
     flex-wrap: wrap;
     gap:10px;
@@ -228,4 +228,5 @@ body,html{
 
 
 }
+
 
