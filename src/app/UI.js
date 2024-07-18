@@ -20,7 +20,7 @@ export class UI{
       const info = data.currentConditions
       const date = new Date()
       
-      document.querySelector("#temp").textContent = info.temp
+      document.querySelector("#temp").textContent = `${info.temp}°`
       document.querySelector("#cond").textContent = info.conditions
       document.querySelector("#wind-speed").textContent = info.windspeed
       document.querySelector("#today-icon").innerHTML = UI.getSvg(info.icon).replaceAll("24px","40px")
@@ -71,7 +71,7 @@ export class UI{
 
          const dayNum = document.createElement("div")
          dayNum.classList.add("forecast-day")
-         dayNum.textContent = i == 0 ? "Today" : date.getDate()+ i + " " + UI.getMonthName(date.getMonth())
+         dayNum.textContent = i == 0 ? "Today" : day.datetime.substring(day.datetime.length - 2) + " " + UI.getMonthName(parseInt(day.datetime.split("-")[1]))
 
          const svg = document.createElement("div")
          svg.classList.add("svg")
@@ -89,6 +89,8 @@ export class UI{
       })
 
     } 
+
+
 
     static getSvg(condition){
          
