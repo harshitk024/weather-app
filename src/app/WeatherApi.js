@@ -41,7 +41,7 @@ export class API {
       const data = await API.getData(city.address.city);
       return data;
     } catch (e) {
-      alert("Error Occured");
+      alert("Location Permission denied !");
     }
   }
 
